@@ -1,2 +1,9 @@
 Create DATABASE diamantDisparu
 //////////////////////////////////////////:
+CREATE table invite(
+    id_invite int PRIMARY KEY,
+    nom varchar(50) ,
+     statut varchar(50)
+    
+)
+//////////////////////////////////////////////
