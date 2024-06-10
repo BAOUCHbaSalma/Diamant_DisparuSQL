@@ -24,11 +24,16 @@ CREATE TABLE Mouvements(
 )
 ////////////////////////////////////////////////////::
 CREATE TABLE Objets(
-    id_objet int,
+    id_objet int PRIMARY KEY,
     nom_objet varchar(50),
     id_room int,
     FOREIGN KEY (id_room) REFERENCES rooms(id_room)
     
-
-
+)
+////////////////////////////////////////////////::
+CREATE TABLE indice(
+    id_indice int PRIMARY KEY,
+    description varchar(20),
+    id_room int,
+    FOREIGN KEY (id_room)REFERENCES rooms(id_room)
 )
