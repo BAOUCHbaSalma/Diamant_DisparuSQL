@@ -43,3 +43,5 @@ SELECT * FROM invite
 SELECT nom , status FROM invite
 ////////////////////::::::::::
 SELECT COUNT(*) as nb_totale FROM invite
+///////////////////////////////////////::
+SELECT COUNT(*) as nb_totale FROM invite WHERE statut='Suspect'
