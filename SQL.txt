@@ -12,3 +12,14 @@ CREATE TABLE Rooms(
     nom varchar(50)
 )
 /////////////////////////////////////////:
+CREATE TABLE Mouvements(
+     
+    id_mouvement int PRIMARY KEY,
+    time time ,
+    id_invite int,
+    id_room int,
+   FOREIGN KEY(id_invite)REFERENCES invite(id_invite),
+    FOREIGN KEY (id_room)REFERENCES rooms(id_room)
+   
+)
+////////////////////////////////////////////////////::
