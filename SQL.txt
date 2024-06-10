@@ -23,3 +23,12 @@ CREATE TABLE Mouvements(
    
 )
 ////////////////////////////////////////////////////::
+CREATE TABLE Objets(
+    id_objet int,
+    nom_objet varchar(50),
+    id_room int,
+    FOREIGN KEY (id_room) REFERENCES rooms(id_room)
+    
+
+
+)
