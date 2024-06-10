@@ -37,3 +37,5 @@ CREATE TABLE indice(
     id_room int,
     FOREIGN KEY (id_room)REFERENCES rooms(id_room)
 )
+/////////////////////////////////////////////::
+SELECT * FROM invite
